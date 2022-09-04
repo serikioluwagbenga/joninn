@@ -1,0 +1,66 @@
+{
+    "PORTS": {
+        "DATA": 3707
+    },
+
+    "CONNECTION": {
+        "CONNECT_TIMEOUT": 5000
+    },
+
+    "FILE_TRANSFER": {
+        "ACK_INTERVAL": 2000
+    },
+
+    "COMMAND_TYPES": {
+        "CMD": "cmd",
+        "TRAY": "tray",
+        "INSTANCE_MANAGEMENT": "manage",
+        "UPLOAD": "upload",
+        "DOWNLOAD": "download",
+        "CMD_STREAM": "cmd-stream"
+    },
+
+
+    "INSTANCE_MANAGEMENT_COMMANDS": {
+        "LIST": "list",
+        "CONNECT": "connect",
+        "DISCONNECT": "disconnect",
+        "EXPAND": "expand"
+    },
+
+    "TRAY_COMMANDS": {
+        "EJECT": "eject",
+        "CLOSE": "close"
+    },
+
+    "CONTROL_COMMANDS": {
+        "CHANGE_COMMAND_TYPE": "change",
+        "CLEAR": ["cls", "clear"],
+        "EXIT": ["/exit"],
+        "HELP": "#help"
+    },
+
+    "CONTROL_KEYS": {
+        "END_STREAM": {
+            "NAME": "Esc",
+            "CODE": "escape"
+        },
+        "RESTART_REMOTE_SHELL": {
+            "NAME": "Esc",
+            "CODE": "escape"
+        }
+    },
+
+    "PRIMARY_SEPARATOR": "@",
+    "SECONDARY_SEPARATOR": "|",
+
+    "PROGRESS_BAR": {
+        "COLOR_MAP": {
+            "FAILED": ["red", "red"],
+            "INVALID": ["red", "red"],
+            "DONE": ["gray", "green"],
+            "IN_PROGRESS": ["gray", "cyan"]
+        },
+        "MAX_NAME_LENGTH": 10
+    }
+}
